@@ -1,0 +1,97 @@
+.login {
+  margin: 9.6rem auto;
+  width: 60rem;
+  border: 2px solid #234567;
+  border-radius: 9px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 1.6rem;
+  background-color: #f1f3f5;
+  transition: all 1s;
+}
+
+.login img {
+  height: 12.5rem;
+}
+
+.signin {
+  margin-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  width: 50rem;
+  align-items: center;
+}
+
+.signin input {
+  padding: 0.5rem;
+  font-family: 'Rubik', sans-serif;
+  border: 1px solid #ced4da;
+  width: 50%;
+  border-radius: 3px;
+}
+
+/* Login Button */
+
+.btn-login {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: 'Rubik', sans-serif;
+  margin-top: 0.8rem;
+}
+
+.btn-login:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.btn-login span {
+  position: relative;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.btn-login svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.btn-login:hover svg {
+  transform: translateX(0);
+}
+
+.btn-login:active {
+  transform: scale(0.95);
+}

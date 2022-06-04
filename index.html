@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script defer src="js/services/storage.service.js"></script>
+    <script defer src="js/services/users.service.js"></script>
+    <script defer src="js/main.js"></script>
+    <title>Safe Content</title>
+  </head>
+  <body>
+    <section class="login" onsubmit="onLogin(event)">
+      <h2>Sign In!</h2>
+      <img src="img/login-user.png" alt="" />
+      <form onsubmit="" class="signin">
+        <input type="text" placeholder="Enter username" name="username" />
+        <input type="text" placeholder="Enter password" name="password" />
+        <button class="btn-login">
+          <span>Login</span>
+          <svg viewBox="0 0 13 10" height="10px" width="15px">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </button>
+      </form>
+    </section>
+
+    <section class="safe-content hidden">
+      <h2>Welcome back, <span class="username"></span>!</h2>
+      <div class="safe-img">
+        <img src="img/safe-content.jpg" alt="" />
+      </div>
+      <div class="btns-container">
+        <a class="btn btn-admin hidden" href="admin.html">Admin</a>
+        <button class="btn" onclick="onLogout()">Log out</button>
+      </div>
+    </section>
+  </body>
+</html>

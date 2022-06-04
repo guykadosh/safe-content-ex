@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/admin.css" />
+
+    <script
+      defer
+      src="https://kit.fontawesome.com/0d3f998bf1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="js/services/storage.service.js"></script>
+    <script defer src="js/services/users.service.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/admin.js"></script>
+
+    <title>Admin page</title>
+  </head>
+  <body onload="initAdmin()">
+    <div class="options-container">
+      <div class="btns">
+        <a class="btn-option" href="index.html">Back</a>
+        <button class="btn-option btn-table" onclick="onSetLayout('table')">
+          <i class="fa-solid fa-grip-lines"></i>
+        </button>
+        <button class="btn-option btn-cards" onclick="onSetLayout('cards')">
+          <i class="fa-solid fa-grip"></i>
+        </button>
+      </div>
+
+      <div class="sort-container">
+        <select onchange="onSortUsers(this.value)">
+          <option value="username">By Username</option>
+          <option value="login-time">By last login time</option>
+        </select>
+      </div>
+    </div>
+    <div class="users-container"></div>
+  </body>
+</html>

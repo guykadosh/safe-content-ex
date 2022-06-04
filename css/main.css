@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+@import 'login.css';
+@import 'safe-content.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #234567;
+  font-family: 'Rubik', sans-serif;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
